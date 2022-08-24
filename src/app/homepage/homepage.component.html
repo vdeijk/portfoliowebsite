@@ -2,18 +2,20 @@
   <!--Header-->
   <header class="header" id="scroll__home">
     <nav class="navbar">
-      <img
-        class="header__logo"
-        src="../assets/images/webdevelopmentlogo3.png"
-        alt="IBM Logo"
-      />
+      <a href="#scroll__home">
+        <img
+          class="header__logo"
+          src="../assets/images/webdevelopmentlogo3.png"
+          alt="IBM Logo"
+        />
+      </a>
       <div class="navbar__menu">
-        <a class="navbar__a"> About </a>
-        <a class="navbar__a"> Referrals </a>
-        <a class="navbar__a"> Technologies </a>
-        <a class="navbar__a"> Portfolio </a>
-        <a class="navbar__a"> Unity </a>
-        <a class="navbar__a"> Contact </a>
+        <a class="navbar__a" href="#scroll__about"> About </a>
+        <a class="navbar__a" href="#scroll__referrals"> Referrals </a>
+        <a class="navbar__a" href="#scroll__technologies"> Technologies </a>
+        <a class="navbar__a" href="#scroll__portfolio"> Portfolio </a>
+        <a class="navbar__a" href="#scroll__unity"> Unity </a>
+        <a class="navbar__a" href="#scroll__contact"> Contact </a>
       </div>
       <span class="navbar__icon">
         <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -25,7 +27,9 @@
       <h3 class="header__h3">Freelance Fullstack <br />Web Developer</h3>
     </div>
     <div class="header__icon-container">
-      <mat-icon class="header__mat-icon--down">keyboard_arrow_down</mat-icon>
+      <a href="#scroll__contact">
+        <mat-icon class="header__mat-icon--down">keyboard_arrow_down</mat-icon>
+      </a>
     </div>
   </header>
 
@@ -77,14 +81,16 @@
   <!--Cards-->
   <app-cards class="portfolio" id="scroll__portfolio"></app-cards>
 
+  <!--Unity-->
+  <app-unity-development class="unity"></app-unity-development>
+
   <!--Contact-->
-  <section class="whitepaper" id="scroll__whitepaper">
-    <h2 class="h2 h2__skew-left">Contact</h2>
+  <section class="whitepaper" id="scroll__contact">
+    <h2 class="h2 h2__skew-left">Contact Rick</h2>
     <div class="h2 h2__line"></div>
     <div class="whitepaper__left"></div>
     <div class="whitepaper__right">
       <form action="#" class="whitepaper__form">
-        <p class="whitepaper__p">Just enter your details below...</p>
         <input
           type="text"
           class="whitepaper__input whitepaper__input--top"
@@ -94,12 +100,32 @@
         />
         <input
           type="email"
-          class="whitepaper__input whitepaper__input--bottom"
+          class="whitepaper__input"
           placeholder="Email address"
           id="email"
           required
         />
+        <textarea
+          class="whitepaper__textarea"
+          placeholder="Message"
+          id="message"
+          rows="4"
+          required
+        ></textarea>
         <app-small-button [title]="'Get in touch'"></app-small-button>
+        <div class="h2 h2__line background-white"></div>
+        <div class="whitepaper__row">
+          <span class="whitepaper__icon">
+            <i class="fa fa-phone"></i>
+          </span>
+          <p class="whitepaper__p">(+31)6-28258357</p>
+        </div>
+        <div class="whitepaper__row">
+          <span class="whitepaper__icon">
+            <i class="fa fa-envelope"></i>
+          </span>
+          <p class="whitepaper__p">vandereijkwebdevelopment@gmail.com</p>
+        </div>
       </form>
     </div>
   </section>

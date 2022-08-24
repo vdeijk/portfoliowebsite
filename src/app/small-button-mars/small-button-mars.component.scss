@@ -1,6 +1,6 @@
 .btn {
-  background-color: var(--color-primary);
-  color: var(--color-black);
+  background-color: var(--color-mars);
+  color: var(--color-white);
   border: none;
   border-radius: 0.8rem;
   font-size: 1.6rem;
@@ -11,15 +11,14 @@
   align-items: center;
   text-decoration: none !important;
   &:hover {
-    background: var(--color-highlight);
-    //color: var(--color-white);
+    background: var(--color-mars-2);
   }
   &__icon {
     font-size: 3.4rem;
     width: 3.4rem;
     height: 3.4rem;
     margin-left: 1rem;
-    color: var(--color-tertiary);
+    color: var(--color-white);
     transition: all 0.3s;
   }
 }

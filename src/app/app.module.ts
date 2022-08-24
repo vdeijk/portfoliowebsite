@@ -10,6 +10,8 @@ import { HomepageComponent } from "./homepage/homepage.component";
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
 import { CardsComponent } from './cards/cards.component';
 import { SmallButtonComponent } from './small-button/small-button.component';
+import { UnityDevelopmentComponent } from './unity-development/unity-development.component';
+import { SmallButtonMarsComponent } from './small-button-mars/small-button-mars.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { SmallButtonComponent } from './small-button/small-button.component';
     HomepageComponent,
     CardsComponent,
     SmallButtonComponent,
+    UnityDevelopmentComponent,
+    SmallButtonMarsComponent,
   ],
   imports: [
     BrowserModule,

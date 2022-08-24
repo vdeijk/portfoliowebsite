@@ -1,10 +1,10 @@
 .footer {
-  font-size: 1.4rem;
+  margin-top: 8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: max-content max-content;
   text-align: center;
   background: var(--color-black);
+  font-family: Monument Extended Regular;
 
   &__logo-box {
     grid-column: 1 /-1;
@@ -19,7 +19,7 @@
   &__copyright {
     width: 100%;
     padding: 2rem 0;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--color-white);
     justify-self: center;
     align-self: center;
@@ -40,6 +40,7 @@
   }
 
   &__link {
+    font-size: 1.3rem;
     &:link,
     &:visited {
       text-decoration: none;
@@ -49,7 +50,6 @@
       display: inline-block;
       transition: all 0.2s;
     }
-
     &:hover,
     &:active {
       color: var(--color-primary);
