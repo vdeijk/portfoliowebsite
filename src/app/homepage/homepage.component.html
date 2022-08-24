@@ -8,14 +8,16 @@
         alt="IBM Logo"
       />
       <div class="navbar__menu">
-        <a class="navbar__a"> Home </a>
         <a class="navbar__a"> About </a>
         <a class="navbar__a"> Referrals </a>
         <a class="navbar__a"> Technologies </a>
         <a class="navbar__a"> Portfolio </a>
-        <a class="navbar__a"> Whitepaper </a>
+        <a class="navbar__a"> Unity </a>
+        <a class="navbar__a"> Contact </a>
       </div>
-      <mat-icon class="header__mat-icon--down"> youtube </mat-icon>
+      <span class="navbar__icon">
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </span>
     </nav>
     <div class="header__textbox">
       <h1 class="header__h1">Rick van der Eijk</h1>
@@ -23,7 +25,7 @@
       <h3 class="header__h3">Freelance Fullstack <br />Web Developer</h3>
     </div>
     <div class="header__icon-container">
-      <mat-icon class="header__mat-icon--down"> keyboard_arrow_down</mat-icon>
+      <mat-icon class="header__mat-icon--down">keyboard_arrow_down</mat-icon>
     </div>
   </header>
 
@@ -75,24 +77,18 @@
   <!--Cards-->
   <app-cards class="portfolio" id="scroll__portfolio"></app-cards>
 
-  <!--Whitepaper-->
+  <!--Contact-->
   <section class="whitepaper" id="scroll__whitepaper">
-    <h2 class="h2 h2__skew-left">
-      Secrets to <br />
-      mastering Javascript
-    </h2>
+    <h2 class="h2 h2__skew-left">Contact</h2>
     <div class="h2 h2__line"></div>
-    <div class="whitepaper__left">
-      <h4 class="whitepaper__h4--left">Whitepaper</h4>
-    </div>
+    <div class="whitepaper__left"></div>
     <div class="whitepaper__right">
       <form action="#" class="whitepaper__form">
-        <h4 class="whitepaper__h4--right">It's almost here!</h4>
         <p class="whitepaper__p">Just enter your details below...</p>
         <input
           type="text"
           class="whitepaper__input whitepaper__input--top"
-          placeholder="Full name"
+          placeholder="Name"
           id="name"
           required
         />
@@ -103,8 +99,7 @@
           id="email"
           required
         />
-        <app-small-button [title]="'Download Whitepaper'"></app-small-button>
-        <p class="whitepaper__p--bottom">*Whitepaper is coming soon</p>
+        <app-small-button [title]="'Get in touch'"></app-small-button>
       </form>
     </div>
   </section>
