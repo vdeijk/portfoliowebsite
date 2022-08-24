@@ -1,0 +1,59 @@
+.footer {
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content;
+  text-align: center;
+  background: var(--color-black);
+
+  &__logo-box {
+    grid-column: 1 /-1;
+    background: var(--color-white);
+  }
+
+  &__logo {
+    width: 15rem;
+  }
+
+  &__navigation,
+  &__copyright {
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--color-white);
+      list-style: none;
+      display: inline-block;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-primary);
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  padding: 1rem 3.2rem;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+
+  &:hover {
+    background-color: var(--color-highlight);
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  &__icon {
+    font-size: 3.4rem;
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-left: 1rem;
+    color: var(--color-tertiary);
+  }
+}
