@@ -14,28 +14,36 @@
         <a class="navbar__a" href="#scroll__referrals"> Referrals </a>
         <a class="navbar__a" href="#scroll__technologies"> Technologies </a>
         <a class="navbar__a" href="#scroll__portfolio"> Portfolio </a>
-        <a class="navbar__a" href="#scroll__unity"> Unity </a>
         <a class="navbar__a" href="#scroll__contact"> Contact </a>
       </div>
-      <span class="navbar__icon">
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </span>
+      <a
+        href="https://www.linkedin.com/in/rick-van-der-eijk-9829b774/"
+        target="_blank"
+      >
+        <div class="navbar__icon-container">
+          <span class="navbar__icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </span>
+        </div>
+      </a>
     </nav>
     <div class="header__textbox">
       <h1 class="header__h1">Rick van der Eijk</h1>
       <div class="h2__line"></div>
       <h3 class="header__h3">Freelance Fullstack <br />Web Developer</h3>
     </div>
-    <div class="header__icon-container">
-      <a href="#scroll__contact">
-        <mat-icon class="header__mat-icon--down">keyboard_arrow_down</mat-icon>
-      </a>
-    </div>
+    <a href="#scroll__contact">
+      <div class="header__icon-container" id="header__icon-container">
+        <span class="header__mat-icon--down" id="header__mat-icon--down">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </span>
+      </div>
+    </a>
   </header>
 
   <!--About-->
   <section class="about" id="scroll__about">
-    <h2 class="h2 h2__skew-left color-white">About Rick</h2>
+    <h2 class="h2 color-white">About Rick</h2>
     <div class="h2 h2__line"></div>
     <div class="about__content">
       <img
@@ -48,7 +56,8 @@
           Rick van der Eijk is a self-taught developer and designer specializing
           in React, Javascript, and (S)CSS. He is obsessed with how development
           and design intersect and wants to create the best user experience
-          possible.
+          possible. Rick has worked on projects for clients such as Unilever,
+          the Dutch government, and IBM.
         </p>
         <a
           class="about__a"
@@ -61,32 +70,20 @@
     </div>
   </section>
 
-  <section class="referrals" id="scroll__referrals">
-    <h2 class="h2 h2__skew-right">Referrals</h2>
-    <div class="h2 h2__line"></div>
-  </section>
+  <!--Cards-->
+  <app-technologies
+    class="technologies"
+    id="scroll__technologies"
+  ></app-technologies>
 
-  <section class="technologies" id="scroll__technologies">
-    <h2 class="h2 h2__skew-right">Technologies</h2>
-    <div class="h2 h2__line"></div>
-    <div class="technologies__content">
-      <h6>React</h6>
-      <h6>Javascript</h6>
-      <h6>CSS</h6>
-      <h6>C#</h6>
-      <h6>Angular</h6>
-    </div>
-  </section>
+  <app-referrals class="referrals" id="scroll__referrals"></app-referrals>
 
   <!--Cards-->
   <app-cards class="portfolio" id="scroll__portfolio"></app-cards>
 
-  <!--Unity-->
-  <app-unity-development class="unity"></app-unity-development>
-
   <!--Contact-->
   <section class="whitepaper" id="scroll__contact">
-    <h2 class="h2 h2__skew-left">Contact Rick</h2>
+    <h2 class="h2">Contact Rick</h2>
     <div class="h2 h2__line"></div>
     <div class="whitepaper__left"></div>
     <div class="whitepaper__right">

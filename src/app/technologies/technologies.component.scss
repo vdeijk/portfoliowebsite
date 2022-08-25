@@ -1,0 +1,104 @@
+.technologies {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 20rem 20rem 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+  }
+  &__img {
+    width: 100%;
+    transition: all 0.3s;
+  }
+  &__React-text {
+    color: var(--color-white);
+    transition: all 0.3s;
+    grid-row: 1 /3;
+    grid-column: 1 /2;
+  }
+  &__React {
+    grid-column: 2 /3;
+    grid-row: 1/3;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__JS {
+    grid-row: 2/4;
+    grid-column: 3 /4;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__JS-text {
+    color: var(--color-white);
+    transition: all 0.3s;
+    grid-row: 2 /4;
+    grid-column: 4 /5;
+  }
+  &__CSS-text {
+    color: var(--color-white);
+    transition: all 0.3s;
+    grid-row: 3 /5;
+    grid-column: 1 /2;
+  }
+  &__CSS {
+    grid-row: 3 /5;
+    grid-column: 2 /3;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__cSharp {
+    grid-row: 4 /6;
+    grid-column: 3 /4;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__cSharp-text {
+    color: var(--color-white);
+    transition: all 0.3s;
+    grid-row: 4/6;
+    grid-column: 4 /5;
+  }
+  &__Angular-text {
+    color: var(--color-white);
+    transition: all 0.3s;
+    grid-row: 5 /7;
+    grid-column: 1 /2;
+  }
+  &__Angular {
+    grid-row: 5 /7;
+    grid-column: 2 /3;
+    &:hover {
+      transform: scale(1.1);
+      z-index: 20;
+    }
+  }
+  &__p {
+    margin-top: 3rem;
+    grid-row: 7 /8;
+    grid-column: 2 /4;
+    font-size: 1.6rem;
+  }
+}
+#technologies__React:hover + #text {
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+#technologies__JS:hover + #technologies__JS-text {
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+#technologies__CSS:hover + #technologies__CSS-text {
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+#technologies__cSharp:hover + #technologies__cSharp-text {
+  color: var(--color-black);
+  transform: scale(1.1);
+}
+#technologies__Angular:hover + #technologies__Angular-text {
+  color: var(--color-black);
+  transform: scale(1.1);
+}

@@ -12,6 +12,8 @@ import { CardsComponent } from './cards/cards.component';
 import { SmallButtonComponent } from './small-button/small-button.component';
 import { UnityDevelopmentComponent } from './unity-development/unity-development.component';
 import { SmallButtonMarsComponent } from './small-button-mars/small-button-mars.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { ReferralsComponent } from './referrals/referrals.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { SmallButtonMarsComponent } from './small-button-mars/small-button-mars.
     SmallButtonComponent,
     UnityDevelopmentComponent,
     SmallButtonMarsComponent,
+    TechnologiesComponent,
+    ReferralsComponent,
   ],
   imports: [
     BrowserModule,

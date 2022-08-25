@@ -1,41 +1,104 @@
 <div class="portfolio__heading">
-  <h2 class="h2 h2__skew-left">Portfolio</h2>
+  <h2 class="h2">Portfolio</h2>
   <div class="h2 h2__line"></div>
 </div>
+
 <div class="portfolio__card">
   <div class="portfolio__inner">
     <div class="portfolio__front">
-      <div class="portfolio__top portfolio__top--image-1">
-        <h4 class="portfolio__h4">Space <br />Wizards</h4>
+      <div class="portfolio__top portfolio__top--image-3">
+        <h4 class="portfolio__h4">Comfy <br />Sloth</h4>
       </div>
       <div class="portfolio__center">
         <h5 class="portfolio__h5">Features</h5>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">Angular</p>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">React</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">NodeJS</p>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">React Hooks</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">Mailchimp</p>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">Javascript</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">SCSS slider</p>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">SCSS</p>
         </div>
       </div>
       <div class="portfolio__bottom">
         <h6 class="portfolio__h6">Flip Card</h6>
-        <mat-icon class="portfolio__icon"> keyboard_arrow_right</mat-icon>
+        <span class="portfolio__icon">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
       </div>
     </div>
     <div class="portfolio__back">
       <div class="portfolio__btn-container">
         <app-small-button [title]="'View project'"></app-small-button
-        ><app-small-button [title]="'Get code'"></app-small-button>
+        ><app-small-button [title]="'Source code'"></app-small-button>
+        <p class="portfolio__p--back">
+          * This course project was originally built by John Smilga, a leading
+          expert on React.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="portfolio__card">
+  <div class="portfolio__inner">
+    <div class="portfolio__front">
+      <div class="portfolio__top portfolio__top--image-1">
+        <h4 class="portfolio__h4">Mars <br />Commander</h4>
+      </div>
+      <div class="portfolio__center">
+        <h5 class="portfolio__h5">Features</h5>
+        <div class="portfolio__icon-text-container">
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">Unity</p>
+        </div>
+        <div class="portfolio__icon-text-container">
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">C#</p>
+        </div>
+        <div class="portfolio__icon-text-container">
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">3D physics</p>
+        </div>
+        <div class="portfolio__icon-text-container">
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">Fully Playable</p>
+        </div>
+      </div>
+      <div class="portfolio__bottom">
+        <h6 class="portfolio__h6">Flip Card</h6>
+        <span class="portfolio__icon">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+    <div class="portfolio__back">
+      <div class="portfolio__btn-container">
+        <app-small-button [title]="'View project'"></app-small-button>
       </div>
     </div>
   </div>
@@ -50,31 +113,41 @@
       <div class="portfolio__center">
         <h5 class="portfolio__h5">Features</h5>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">React</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">NodeJS</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">React Hooks</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">Styled Components</p>
         </div>
       </div>
       <div class="portfolio__bottom">
         <h6 class="portfolio__h6">Flip Card</h6>
-        <mat-icon class="portfolio__icon"> keyboard_arrow_right</mat-icon>
+        <span class="portfolio__icon">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
       </div>
     </div>
     <div class="portfolio__back">
       <div class="portfolio__btn-container">
         <app-small-button [title]="'View project'"></app-small-button
-        ><app-small-button [title]="'Get code'"></app-small-button>
+        ><app-small-button [title]="'Source code'"></app-small-button>
       </div>
     </div>
   </div>
@@ -83,76 +156,45 @@
 <div class="portfolio__card">
   <div class="portfolio__inner">
     <div class="portfolio__front">
-      <div class="portfolio__top portfolio__top--image-3">
-        <h4 class="portfolio__h4">Comfy <br />Sloth</h4>
-      </div>
-      <div class="portfolio__center">
-        <h5 class="portfolio__h5">Features</h5>
-        <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">React</p>
-        </div>
-        <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">React Hooks</p>
-        </div>
-        <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">Javascript</p>
-        </div>
-        <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">SCSS</p>
-        </div>
-      </div>
-      <div class="portfolio__bottom">
-        <h6 class="portfolio__h6">Flip Card</h6>
-        <mat-icon class="portfolio__icon"> keyboard_arrow_right</mat-icon>
-      </div>
-    </div>
-    <div class="portfolio__back">
-      <div class="portfolio__btn-container">
-        <app-small-button [title]="'View project'"></app-small-button
-        ><app-small-button [title]="'Get code'"></app-small-button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="portfolio__card">
-  <div class="portfolio__inner">
-    <div class="portfolio__front">
-      <div class="portfolio__top portfolio__top--image-3">
+      <div class="portfolio__top portfolio__top--image-4">
         <h4 class="portfolio__h4">Nexter</h4>
       </div>
       <div class="portfolio__center">
         <h5 class="portfolio__h5">Features</h5>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">React</p>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
+          <p class="portfolio__p">HTML</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
-          <p class="portfolio__p">React Hooks</p>
-        </div>
-        <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">Javascript</p>
         </div>
         <div class="portfolio__icon-text-container">
-          <mat-icon class="portfolio__icon--center"> done</mat-icon>
+          <span class="portfolio__icon--center">
+            <i class="fa fa-check"></i>
+          </span>
           <p class="portfolio__p">SCSS</p>
         </div>
       </div>
       <div class="portfolio__bottom">
         <h6 class="portfolio__h6">Flip Card</h6>
-        <mat-icon class="portfolio__icon"> keyboard_arrow_right</mat-icon>
+        <span class="portfolio__icon">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </span>
       </div>
     </div>
     <div class="portfolio__back">
       <div class="portfolio__btn-container">
         <app-small-button [title]="'View project'"></app-small-button
-        ><app-small-button [title]="'Get code'"></app-small-button>
+        ><app-small-button [title]="'Source code'"></app-small-button>
+        <p class="portfolio__p--back">
+          * This course project was originally built by Jonas Smedtmann, a
+          leading expert on Javascript and CSS.
+        </p>
       </div>
     </div>
   </div>

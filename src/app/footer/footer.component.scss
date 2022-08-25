@@ -41,9 +41,9 @@
 
   &__link {
     font-size: 1.3rem;
+    text-decoration: underline;
     &:link,
     &:visited {
-      text-decoration: none;
       text-transform: uppercase;
       color: var(--color-white);
       list-style: none;
@@ -52,7 +52,7 @@
     }
     &:hover,
     &:active {
-      color: var(--color-primary);
+      color: var(--color-highlight);
       transform: rotate(5deg) scale(1.3);
     }
   }

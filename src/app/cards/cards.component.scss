@@ -42,14 +42,20 @@
     font-family: inherit;
     font-size: 1.8rem;
     display: inline-block;
+    &--back {
+      margin-top: 3rem;
+      font-size: 1.6rem;
+      color: var(--color-white);
+      text-align: left;
+    }
   }
 
   &__icon {
-    font-size: 5rem;
-    width: 5rem;
-    height: 5rem;
+    font-size: 3rem;
     margin-left: 1rem;
     color: var(--color-tertiary);
+    display: flex;
+    align-items: center;
 
     &--center {
       font-size: 2.8rem;
@@ -83,7 +89,8 @@
           rgba(25, 114, 120, 0.65),
           rgba(25, 114, 120, 0.65)
         ),
-        url(/../assets/images/spacewizards.jpg);
+        url(/../assets/images/annihilate.jpg);
+      height: 50%;
     }
 
     &--image-2 {
@@ -93,6 +100,7 @@
         ),
         url(/../assets/images/dictionary.jpg);
       background-position: 50% 90%;
+      height: 50%;
     }
 
     &--image-3 {
@@ -100,7 +108,16 @@
           rgba(25, 114, 120, 0.65),
           rgba(25, 114, 120, 0.65)
         ),
-        url(/../assets/images/portfolio1.jpg);
+        url(/../assets/images/couch.jpg);
+      height: 50%;
+    }
+    &--image-4 {
+      background-image: linear-gradient(
+          rgba(25, 114, 120, 0.65),
+          rgba(25, 114, 120, 0.65)
+        ),
+        url(/../assets/images/house.jpg);
+      height: 50%;
     }
   }
 
@@ -115,9 +132,8 @@
   }
 
   &__bottom {
+    height: 6rem;
     width: 100%;
-    height: max-content;
-    padding: 0.5rem;
     color: var(--color-black);
     border-radius: 0 0 1rem 1rem;
     background: var(--color-primary);
