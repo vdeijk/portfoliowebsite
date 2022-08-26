@@ -1,19 +1,21 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
-import { MatIconModule } from "@angular/material/icon";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { NavComponent } from "./nav/nav.component";
-import { FooterComponent } from "./footer/footer.component";
-import { HomepageComponent } from "./homepage/homepage.component";
-import { NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { CardsComponent } from './cards/cards.component';
 import { SmallButtonComponent } from './small-button/small-button.component';
 import { UnityDevelopmentComponent } from './unity-development/unity-development.component';
 import { SmallButtonMarsComponent } from './small-button-mars/small-button-mars.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { ReferralsComponent } from './referrals/referrals.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { ReferralsComponent } from './referrals/referrals.component';
     AppRoutingModule,
     NoopAnimationsModule,
     MatIconModule,
+    CommonModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

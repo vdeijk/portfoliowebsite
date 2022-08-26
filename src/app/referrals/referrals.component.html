@@ -1,4 +1,4 @@
-<div class="referrals__icon-left">
+<div class="referrals__icon-left" (click)="moveSliderLeft()">
   <span class="referrals__icon">
     <i class="fa fa-arrow-left" aria-hidden="true"></i>
   </span>
@@ -6,7 +6,7 @@
 <h2 class="h2 color-white">Referrals</h2>
 <div class="h2 h2__line"></div>
 <div class="slider">
-  <div class="slide">
+  <div [ngClass]="slideClass0">
     <div>
       <h6 class="color-white">Thankful!</h6>
       <blockquote class="referrals__p">
@@ -23,8 +23,38 @@
       </address>
     </div>
   </div>
+  <div [ngClass]="slideClass1">
+    <div>
+      <h6 class="color-white">Got a job thanks to Rick!</h6>
+      <blockquote class="referrals__p">
+        Rick has been an excellent mentor for the last three months since we met
+        through a program called codebuddies. I say this because I managed to
+        secure a couple offers from software companies despite the fact I am
+        still a student. This happened after several online sessions with Rick
+        where he guided me on how to sell my skills and offered me tips on
+        taking interviews. In conclusion, I think an undergraduate, especially
+        in Kenya where I am from, would benefit a lot from what a mentor like
+        Rick has to offer to secure employment here where opportunities are much
+        less and very competitive.
+      </blockquote>
+      <address class="testimonial__author">
+        <h6 class="color-white">Charles Kagwi</h6>
+        <p class="color-white">Mobile & Web developer</p>
+      </address>
+    </div>
+  </div>
+  <!--<div [ngClass]="slideClass2">
+    <div>
+      <h6 class="color-white">Got a job thanks to Rick!</h6>
+      <blockquote class="referrals__p">Blaat</blockquote>
+      <address class="testimonial__author">
+        <h6 class="color-white">bla bla</h6>
+        <p class="color-white">CEO</p>
+      </address>
+    </div>
+  </div>-->
 </div>
-<div class="referrals__icon-right">
+<div class="referrals__icon-right" (click)="moveSliderRight()">
   <span class="referrals__icon">
     <i class="fa fa-arrow-right" aria-hidden="true"></i>
   </span>

@@ -44,10 +44,19 @@
       transform: scale(1.2);
     }
   }
+  &__pos-0 {
+    transform: translateX(0rem);
+  }
+  &__pos-1 {
+    transform: translateX(100rem);
+  }
+  &__pos-2 {
+    transform: translateX(100rem);
+  }
 }
 .slider {
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   position: relative;
   overflow: hidden;
   display: grid;
