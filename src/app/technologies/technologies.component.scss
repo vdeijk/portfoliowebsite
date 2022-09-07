@@ -76,15 +76,27 @@
     }
   }
   &__p {
-    &--top {
-      margin-bottom: 3rem;
-    }
-    &--bottom {
-      margin-top: 3rem;
+    &--small {
       grid-row: 7 /8;
       grid-column: 2 /4;
       font-size: 1.6rem;
     }
+    &--bottom {
+      margin-bottom: 1rem;
+    }
+    &--highlight {
+      color: var(--color-tertiary);
+      font-weight: bold;
+      font-size: 1.8rem;
+      grid-row: 9 /10;
+      grid-column: 1/-1;
+      font-family: Helvetica Neue;
+      margin-left: 3.4rem;
+    }
+  }
+  &__content-bottom {
+    grid-row: 8 /9;
+    grid-column: 1/-1;
   }
 }
 #technologies__React:hover + #text {

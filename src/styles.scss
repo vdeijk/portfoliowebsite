@@ -136,6 +136,18 @@ button {
   }
 }
 
+a {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  color: var(--color-tertiary);
+  font-family: Monument Extended Regular;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--color-highlight);
+    cursor: pointer;
+  }
+}
+
 .color-white {
   color: var(--color-white) !important;
 }

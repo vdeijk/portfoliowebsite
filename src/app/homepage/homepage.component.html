@@ -30,7 +30,13 @@
     <div class="header__textbox">
       <h1 class="header__h1">Rick van der Eijk</h1>
       <div class="h2__line"></div>
-      <h3 class="header__h3">Freelance Fullstack <br />Web Developer</h3>
+      <h3 class="header__h3">
+        <span class="header__h3--first">Freelance </span
+        ><span class="header__h3--second">Fullstack </span> <br /><span
+          class="header__h3--third"
+          >Web </span
+        ><span class="header__h3--fourth">Developer</span>
+      </h3>
     </div>
     <a href="#scroll__about">
       <div class="header__icon-container" id="header__icon-container">
@@ -42,7 +48,7 @@
   </header>
 
   <!--About-->
-  <section class="about" id="scroll__about">
+  <section id="scroll__about" class="about">
     <h2 class="h2 color-white">About Rick</h2>
     <div class="h2 h2__line"></div>
     <div class="about__content">
@@ -51,16 +57,54 @@
         alt="Rick van der Eijk"
         class="about__image"
       />
-      <div class="about__text">
-        <p class="about__p">
-          Rick van der Eijk is a self-taught developer and designer specializing
-          in React, Javascript, and (S)CSS. He is obsessed with how development
-          and design intersect and wants to create the best user experience
-          possible. Rick has worked for organizations such as Unilever, the
-          Dutch government, and IBM.
-        </p>
+      <p
+        class="about__p"
+        [ngClass]="displayFullText ? 'about__expanded' : 'about__contracted'"
+      >
+        Rick van der Eijk is a self-taught, freelance, full-stack developer with
+        a passion for how development and design interact. He has worked for
+        enterprises such as Unilever, the Dutch government, and IBM, but also
+        for startups and other small businesses. He thrives in environments
+        where enthusiasm and dedication are rewarded, and where good work ethic
+        can make a difference.<br /><br />
+        In 2015-2016, for ZZF, a small but well-known Dutch charity (ZZF), Rick
+        redesigned a CRM system from the ground up, enabling the organization to
+        store its many contacts in a more organized fashion.<br /><br />
+        Rick started his journey to become a full stack developer in January
+        2020. However, barely after, Covid struck. Rather than giving up, he
+        doubled down, regularly putting in over 80 hours per week, so he could
+        both pay his bills and make progress on his studies. His website
+        (https://portfolio-rick-van-der-eijk.web.app/) was built during that
+        time, as well as several portfolio projects that can be found on
+        there.<br /><br />
+        In March 2021, Rick was hired by IBM as a frontend developer. During the
+        rest of the year (April to December 2021), he put in over 300 study
+        hours, earning him the status of Champion Learner Gold, which only 5
+        percent of IBM-ers attain. Within his 18 months at IBM, Rick also
+        promoted twice, earning him special commendation for his technical
+        skills. <br /><br />
+        Because of Rick’s background in sales, his communication skills are
+        excellent. For example, at the Unilever project, Rick knew that the
+        chosen tech stack wasn’t going to work well, even though it had more or
+        less been decided before he arrived. Due to this risk, Rick persuaded
+        fellow team members, some of them many levels above his own, to alter
+        course. This led to a result that could otherwise never have been
+        attained. Afterwards, several potential customers praised the frontend
+        that Rick had built.<br /><br />
+        Rick is always looking for new challenges to overcome, which is why he
+        decided to learn Unity in August 2021. Fascinatingly, his game idea
+        involved complex 3D vector math and physics, even though he has never
+        had formal technical education of any kind. His project, Mars Commander,
+        is fully playable and currently in alpha state:
+        https://vdeijk.itch.io/mars-commander<br /><br />
+        Currently, Rick works as a freelancer for Reflectlab in Eindhoven.
+        Contact him for more info about this assignment, or for opportunities to
+        work with him.
+      </p>
+      <div class="about__buttons">
+        <a class="about__a" (click)="expandText()">{{ aboutButtonText }}</a>
         <a
-          class="about__a"
+          class="about__a--button"
           href="../assets/files/RickvanderEijkCV2022.pdf"
           download
         >

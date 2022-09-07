@@ -67,9 +67,21 @@
   grid-column: 1/-1;
   background: url(/../assets/images/header1.jpg),
     linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8));
+  // animation: background-fade 2s;
   background-blend-mode: soft-light;
   background-size: cover;
   background-position: 50% 65%;
+
+  @keyframes background-fade {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
   &__textbox {
     text-align: center;
@@ -97,8 +109,101 @@
     }
   }
 
+  &__h1 {
+    animation: text-fade-h1 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px);
+  }
+
+  @keyframes text-fade-h1 {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
   &__h3 {
     color: var(--color-white);
+
+    &--first {
+      opacity: 0;
+      animation: text-fade-1 4s 2s;
+      animation-fill-mode: forwards;
+    }
+    &--second {
+      opacity: 0;
+      animation: text-fade-2 4s 2s;
+      animation-fill-mode: forwards;
+    }
+    &--third {
+      opacity: 0;
+      animation: text-fade-3 4s 2s;
+      animation-fill-mode: forwards;
+    }
+    &--fourth {
+      opacity: 0;
+      animation: text-fade-4 4s 2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes text-fade-1 {
+    from {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-fade-2 {
+    from {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-fade-3 {
+    from {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes text-fade-4 {
+    from {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   &__h1 {
@@ -137,12 +242,28 @@
     font-size: 3rem;
     transition: all 0.3s;
     color: var(--color-tertiary);
+    animation: icon-size 1s infinite;
+    animation-delay: 6s;
   }
 }
+
+@keyframes icon-size {
+  from {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 #header__icon-container:hover > #header__mat-icon--down {
   cursor: pointer;
   color: var(--color-white);
-  transform: scale(1.2);
+  transform: scale(1.4);
+  animation-play-state: paused;
 }
 
 .referrals {
@@ -213,25 +334,51 @@
   flex-direction: column;
   align-items: center;
   border-radius: 1rem;
+  overflow: hidden;
+  transition: all 1s;
+  position: relative;
+
+  &__contracted {
+    max-height: 150px;
+  }
+
+  &__expanded {
+    max-height: 1400px;
+  }
+
+  &__buttons {
+    grid-column: 2/-1;
+    display: grid;
+    grid-row-gap: 3rem;
+  }
+
   &__p {
     color: var(--color-white);
     text-align: left;
-    margin-bottom: 3rem;
+    overflow: hidden;
+    transition: all 1s;
   }
   &__a {
-    text-decoration: none;
+    transition: all 0.3s;
+    &--button {
+      margin-top: 1rem;
+      text-decoration: none;
+    }
   }
   &__content {
     padding: 0 3rem 3rem 3rem;
     border-radius: 1rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: max-content max-content;
     justify-content: center;
+    grid-gap: 2rem;
   }
   &__image {
     width: 16rem;
     border-radius: 50%;
     justify-self: center;
+    grid-row: 1/-1;
   }
   &__text {
     justify-self: center;
