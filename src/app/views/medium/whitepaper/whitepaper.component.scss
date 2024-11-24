@@ -1,0 +1,52 @@
+.whitepaper {
+  width: 88rem;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+
+  &__heading {
+    grid-column: 1/-1;
+  }
+
+  &__left {
+    text-align: right;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      url(/../assets/images/whitepaper.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 0rem 0rem 1rem;
+    color: var(--color-white);
+    padding: 5rem 2rem;
+  }
+
+  &__h4 {
+    color: var(--color-white);
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    color: var(--color-white);
+  }
+
+  &__text-small {
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-size: 1.5rem;
+  }
+
+  &__right {
+    width: 100%;
+    text-align: left;
+    padding: 5rem 2rem;
+    border-radius: 0 1rem 1rem 0;
+    background: var(--color-tertiary);
+  }
+
+  &__form {
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+  }
+}

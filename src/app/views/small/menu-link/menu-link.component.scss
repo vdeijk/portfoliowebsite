@@ -1,0 +1,13 @@
+.link {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  color: var(--color-tertiary);
+  width: max-content;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-highlight);
+    transform: rotate(5deg) scale(1.2);
+  }
+}

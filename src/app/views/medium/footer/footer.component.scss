@@ -1,0 +1,12 @@
+.footer {
+  font-size: var(--font-size-S);
+  text-align: center;
+  background: var(--color-black);
+  margin-top: 3rem;
+
+  &__text {
+    font-size: 1.6rem;
+    color: white;
+    padding: 2rem;
+  }
+}

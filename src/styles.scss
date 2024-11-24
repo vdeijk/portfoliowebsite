@@ -1,65 +1,6 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
-@use "@angular/material" as mat;
-// Plus imports for other components in your app.
-
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
-@include mat.core();
-
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
-$porfolio-website-primary: mat.define-palette(mat.$indigo-palette);
-$porfolio-website-accent: mat.define-palette(
-  mat.$pink-palette,
-  A200,
-  A100,
-  A400
-);
-
-// The warn palette is optional (defaults to red).
-$porfolio-website-warn: mat.define-palette(mat.$red-palette);
-
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
-$porfolio-website-theme: mat.define-light-theme(
-  (
-    color: (
-      primary: $porfolio-website-primary,
-      accent: $porfolio-website-accent,
-      warn: $porfolio-website-warn,
-    ),
-  )
-);
-
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
-@include mat.all-component-themes($porfolio-website-theme);
-
-//FONTS
-@font-face {
-  font-family: "Migra Regular";
-  src: url(./assets/fonts/migra/Migra-Regular.ttf) format("truetype");
-}
-
 @font-face {
   font-family: "Monument Extended Regular";
   src: url(./assets/fonts/monumentExtended/MonumentExtended-Regular.ttf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Real one specific Regular";
-  src: url(./assets/fonts/realOneSpecific/Realonespecificscript-Regular.otf)
-    format("truetype");
-}
-
-@font-face {
-  font-family: "Real one specific script Regular";
-  src: url(./assets/fonts/realOneSpecific/Realonespecific-Regular.otf)
     format("truetype");
 }
 
@@ -74,11 +15,9 @@ $porfolio-website-theme: mat.define-light-theme(
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: Monserrat;
 }
 
 body {
-  //VARIABLES
   --color-primary: #f3db1b;
   --color-secondary: #0a090c;
   --color-tertiary: #197278;
@@ -87,6 +26,8 @@ body {
   --color-white-opacity: rgba(253, 253, 253, 0.93);
   --color-grey-dark-2: #343434;
   --color-black: #222;
+  --font-primary: "Monument Extended Regular";
+  --font-secondary: "Helvetica";
 }
 
 h1,
@@ -95,16 +36,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Monument Extended Regular;
-  line-height: 1.2;
+  font-family: var(--font-primary);
+  line-height: 1;
 }
 
 h1 {
   font-size: 5.8rem;
-
-  &--main {
-    display: block;
-  }
 }
 
 h2 {
@@ -130,56 +67,10 @@ h6 {
 
 p {
   font-size: 1.8rem;
-  font-family: Helvetica Neue;
+  font-family: var(--font-secondary);
 }
 
-button {
-  background-color: var(--color-primary);
-  color: var(--color-black);
-  border: none;
-  border-radius: 0.8rem;
-  font-family: Monument Extended Regular;
+a {
   font-size: 1.6rem;
-  padding: 1.5rem 3.2rem;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: var(--color-tertiary);
-    cursor: pointer;
-    color: var(--color-white);
-  }
-}
-
-.color-white {
-  color: var(--color-white);
-}
-
-.h2 {
-  text-align: center;
-  grid-column: 1/-1;
-  justify-self: center;
-  &__line {
-    justify-self: center;
-    height: 0.4rem;
-    background: var(--color-tertiary);
-    width: 8rem;
-    margin: 2rem;
-  }
-  &__skew-left {
-    transition: all 0.3s;
-    &:hover {
-      transform: skewY(-2deg) skewX(-15deg) scale(1.15);
-    }
-  }
-  &__skew-right {
-    transition: all 0.3s;
-    &:hover {
-      transform: skewY(2deg) skewX(15deg) scale(1.15);
-    }
-  }
-
-  button {
-    text-decoration: none;
-    font-size: 18rem;
-  }
+  font-family: var(--font-primary);
 }

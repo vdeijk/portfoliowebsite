@@ -1,0 +1,25 @@
+.technologies {
+  display: grid;
+  width: 88rem;
+  justify-self: center;
+
+  &__content {
+    grid-gap: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    align-items: center;
+  }
+
+  &__h2 {
+    text-align: center;
+  }
+
+  &__text-small {
+    font-size: 1.4rem;
+  }
+
+  &__margin-bottom {
+    margin-bottom: 3rem;
+  }
+}

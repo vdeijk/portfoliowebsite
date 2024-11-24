@@ -1,0 +1,21 @@
+<section class="technologies" id="technologies">
+  <h2 class="technologies__h2">Technologies</h2>
+  <app-header-line></app-header-line>
+  <p class="technologies__margin-bottom">Rick has worked with many different languages and technologies, but below are
+    the ones that he understands best.
+  </p>
+  <div class="technologies__content technologies__margin-bottom">
+    <ng-container *ngFor="let technology of coreTechnologies; let i = index">
+      <app-technology-left *ngIf="i % 2 === 0" [technologyName]="technology.technologyName"
+        [technologySrc]="technology.technologySrc"></app-technology-left>
+      <app-technology-right *ngIf="i % 2 !== 0" [technologyName]="technology.technologyName"
+        [technologySrc]="technology.technologySrc"></app-technology-right>
+    </ng-container>
+  </div>
+  <p class="technologies__text-small technologies__margin-bottom">* Van der Eijk Web Development is not officially
+    endorsed by any of the
+    organizations that created the above logos
+  </p>
+  <p class="technologies__margin-bottom">Other technologies that Rick is familiar with include:</p>
+  <app-unordered-list [texts]="otherTechnologies"></app-unordered-list>
+</section>

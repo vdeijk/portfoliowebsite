@@ -1,0 +1,29 @@
+.whitepaper-input {
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  font-family: inherit;
+  font-family: var(--font-secondary);
+  padding-left: 2rem;
+  border-radius: 8px;
+  border: none;
+  border-bottom: solid 0.3rem transparent;
+  display: block;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: none;
+    border-bottom: 3px solid var(--color-primary);
+  }
+
+  &:focus:invalid {
+    border-bottom: 3px solid var(--color-highlight);
+  }
+
+  &:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

@@ -1,0 +1,23 @@
+.icon {
+  display: inline-block;
+  font-size: 3rem;
+  width: 3rem;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    color: var(--color-highlight);
+    scale: 1.2;
+  }
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-tertiary {
+  color: var(--color-tertiary);
+}

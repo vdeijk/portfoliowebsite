@@ -1,0 +1,20 @@
+.scroll-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-tertiary);
+  height: 10rem;
+  width: 10rem;
+  transition: all 0.3s;
+  clip-path: inset(0rem 0rem 5rem 0rem);
+  &:hover {
+    color: var(--color-white);
+    cursor: pointer;
+    background: var(--color-highlight);
+  }
+}

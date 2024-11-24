@@ -1,0 +1,31 @@
+<div class="portfolio__card">
+  <div class="portfolio__inner">
+    <div class="portfolio__front">
+      <div class="portfolio__top" [ngClass]="imageDynamicClasses">
+        <h4 class="portfolio__h4">{{cardTitle}}</h4>
+      </div>
+      <div class="portfolio__center">
+        <div class="portfolio__center-content">
+          <h5 class="portfolio__h5">Features</h5>
+          <ng-container *ngFor="let cardFeature of cardFeatures">
+            <div class="portfolio__feature"> <app-font-awesome-icon fontAwesomeType="fa-solid fa-check"
+                [iconColor]="iconColor"></app-font-awesome-icon>
+              <p>{{cardFeature}}</p>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+      <div class="portfolio__bottom">
+        <h6 class="portfolio__h6">Flip</h6>
+        <app-font-awesome-icon fontAwesomeType="fa-solid fa-arrow-right"
+          [iconColor]="iconColor"></app-font-awesome-icon>
+      </div>
+    </div>
+    <div class="portfolio__back">
+      <div class="portfolio__buttons">
+        <app-small-button [title]="'View project'"></app-small-button><app-small-button
+          [title]="'Get code'"></app-small-button>
+      </div>
+    </div>
+  </div>
+</div>

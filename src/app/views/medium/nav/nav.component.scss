@@ -1,0 +1,21 @@
+.navbar {
+  background: var(--color-white);
+  height: 8rem;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: max-content max-content max-content;
+  grid-gap: 3rem;
+  align-items: center;
+  padding: 0 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+
+  &__menu {
+    display: grid;
+    justify-items: end;
+    grid-column-gap: 3rem;
+    width: max-content;
+    grid-template-columns: repeat(6, max-content);
+  }
+}

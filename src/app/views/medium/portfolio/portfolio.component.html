@@ -1,0 +1,11 @@
+<section class="portfolio">
+  <div class="portfolio__heading" id="portfolio">
+    <h2 class="h2">Portfolio</h2>
+    <app-header-line></app-header-line>
+  </div>
+  <div class="portfolio__content">
+    <ng-container *ngFor="let cardFeatures of cardsFeatures; let i = index">
+      <app-portfolio-card [cardFeatures]="cardFeatures" [cardTitle]="cardsTitles[i]" [cardImageSrc]="i"></app-portfolio-card>
+    </ng-container>
+  </div>
+</section>

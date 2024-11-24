@@ -1,0 +1,16 @@
+.technology-right {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  grid-gap: 3rem;
+  justify-self: start;
+  transition: all 0.2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  &__image {
+    width: 20rem;
+  }
+}
+

@@ -1,0 +1,32 @@
+.small-button {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  padding: 1rem 3.2rem;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  font-family: var(--font-primary);
+
+  &:hover {
+    background-color: var(--color-highlight);
+    cursor: pointer;
+    color: var(--color-white);
+  }
+
+  &__extra-margin-top-S {
+    margin-top: 1rem;
+  }
+
+  &__extra-margin-top-M {
+    margin-top: 2rem;
+  }
+
+  &__extra-margin-top-L {
+    margin-top: 3rem;
+  }
+}
