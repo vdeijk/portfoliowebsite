@@ -5,7 +5,8 @@
   </div>
   <div class="portfolio__content">
     <ng-container *ngFor="let cardFeatures of cardsFeatures; let i = index">
-      <app-portfolio-card [cardFeatures]="cardFeatures" [cardTitle]="cardsTitles[i]" [cardImageSrc]="i"></app-portfolio-card>
+      <app-portfolio-card [cardFeatures]="cardFeatures" [cardTitle]="cardsTitles[i]" [cardImageSrc]="i"
+        [cardLinks]="cardsLinks[i]"></app-portfolio-card>
     </ng-container>
   </div>
 </section>

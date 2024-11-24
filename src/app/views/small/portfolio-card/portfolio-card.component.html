@@ -23,8 +23,10 @@
     </div>
     <div class="portfolio__back">
       <div class="portfolio__buttons">
-        <app-small-button [title]="'View project'"></app-small-button><app-small-button
-          [title]="'Get code'"></app-small-button>
+        <app-small-button [title]="'View project'" *ngIf="cardLinks.view"
+          (buttonClick)="openLink(cardLinks.view)"></app-small-button>
+        <app-small-button [title]="'Get code'" *ngIf="cardLinks.code"
+          (buttonClick)="openLink(cardLinks.code)"></app-small-button>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { AppColor } from 'src/app/enums/app-color';
+import { CardLinks } from 'src/app/interfaces/cardLinks';
 
 @Component({
   selector: 'app-portfolio-card',
@@ -11,6 +12,7 @@ export class PortfolioCardComponent implements OnInit {
   @Input() cardFeatures: string[] = [];
   @Input() cardTitle = '';
   @Input() cardImageSrc = 0;
+  @Input() cardLinks: CardLinks = { view: '', code: '' };
 
   public imageDynamicClasses = '';
   public iconColor = AppColor.Tertiary;
@@ -32,5 +34,9 @@ export class PortfolioCardComponent implements OnInit {
       return 'portfolio__image-3';
     }
     return 'portfolio__image-0';
+  }
+
+  openLink(url: string): void {
+    window.open(url, '_blank');
   }
 }
