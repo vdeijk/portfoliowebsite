@@ -3,11 +3,6 @@
   font-size: 3rem;
   width: 3rem;
   transition: all 0.2s;
-  &:hover {
-    cursor: pointer;
-    color: var(--color-highlight);
-    scale: 1.2;
-  }
 }
 
 .color-primary {
@@ -20,4 +15,11 @@
 
 .color-tertiary {
   color: var(--color-tertiary);
+}
+
+.icon__hover-scale {
+  &:hover {
+    cursor: pointer;
+    scale: 1.2;
+  }
 }
