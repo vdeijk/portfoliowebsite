@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { CoreTechnology } from '../interfaces/coreTechnology';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TechnologiesService {
-  coreTechnologies = [
+  coreTechnologies: CoreTechnology[] = [
     { technologyName: 'React', technologySrc: 'assets/images/react.png' },
     {
       technologyName: 'Javascript',
@@ -13,9 +14,10 @@ export class TechnologiesService {
     { technologyName: 'CSS', technologySrc: 'assets/images/css.png' },
     { technologyName: 'C#', technologySrc: 'assets/images/react.png' },
     { technologyName: 'Angular', technologySrc: 'assets/images/angular.svg' },
+    { technologyName: 'Unity', technologySrc: 'assets/images/unity.png' },
   ];
 
-  otherTechnologies = [
+  otherTechnologies: string[] = [
     'Python',
     'NodeJS',
     'SQL',

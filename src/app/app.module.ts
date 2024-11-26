@@ -24,6 +24,8 @@ import { WhitepaperInputComponent } from './views/small/text-input/text-input.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PortfolioCardComponent } from './views/small/portfolio-card/portfolio-card.component';
+import { ReferralButtonComponent } from './views/small/referral-button/referral-button.component';
+import { ReferralComponent } from './views/small/referral/referral.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { PortfolioCardComponent } from './views/small/portfolio-card/portfolio-c
     UnorderedListComponent,
     WhitepaperInputComponent,
     PortfolioCardComponent,
+    ReferralButtonComponent,
+    ReferralComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,22 +10,33 @@ import { AppColor } from 'src/app/enums/app-color';
 export class IconComponent implements OnInit {
   @Input() public fontAwesomeType: string = '';
   @Input() public iconColor: AppColor = AppColor.Primary;
+  @Input() public shouldScaleWhenHovered: boolean = false;
 
   public dynamicClasses = '';
 
   constructor() {}
 
   ngOnInit(): void {
-    this.dynamicClasses = this.assignDynamicClasses();
+    this.dynamicClasses =
+      this.fontAwesomeType +
+      this.assignDynamicColor() +
+      this.assignDynamicHover();
   }
 
-  assignDynamicClasses() {
+  assignDynamicColor() {
     if (this.iconColor === AppColor.Secondary) {
-      return this.fontAwesomeType + ' color-secondary';
+      return ' color-secondary';
     }
     if (this.iconColor === AppColor.Tertiary) {
-      return this.fontAwesomeType + ' color-tertiary';
+      return ' color-tertiary';
     }
-    return this.fontAwesomeType + ' color-primary';
+    return ' color-primary';
+  }
+
+  assignDynamicHover() {
+    if (this.shouldScaleWhenHovered) {
+      return ' icon__hover-scale';
+    }
+    return '';
   }
 }
