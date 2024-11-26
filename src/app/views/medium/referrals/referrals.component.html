@@ -1,4 +1,17 @@
 <section class="referrals" id="referrals">
-  <h2 class="">Referrals</h2>
-  <app-header-line></app-header-line>
+  <app-referral-button fontAwesomeType="fa-solid fa-arrow-left"
+    (buttonClick)="previousReferral()"></app-referral-button>
+  <div class="referrals__content">
+    <div class="referrals__heading">
+      <h2 class="">Referrals</h2>
+      <app-header-line></app-header-line>
+      <div class="referrals__container">
+        <ng-container *ngFor="let referral of referrals; let i = index">
+        <app-referral [referral]="referral" [class.active]="i === currentIndex"
+          [class.inactive]="i !== currentIndex"></app-referral>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  <app-referral-button fontAwesomeType="fa-solid fa-arrow-right" (buttonClick)="nextReferral()"></app-referral-button>
 </section>
