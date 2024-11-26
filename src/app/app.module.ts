@@ -14,7 +14,7 @@ import { SmallButtonComponent } from './views/small/small-button/small-button.co
 import { MenuLinkComponent } from './views/small/menu-link/menu-link.component';
 import { ScrollButtonComponent } from './views/small/scroll-button/scroll-button.component';
 import { IconComponent } from './views/small/font-awesome-icon/font-awesome-icon.component';
-import { LineComponent } from './views/small/line/header-line.component';
+import { LineComponent } from './views/small/header-line/header-line.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HomepageComponent } from './views/large/Homepage/homepage.component';
 import { TechnologyLeftComponent } from './views/small/technology-left/technology-left.component';
