@@ -18,14 +18,17 @@ export class TechnologiesService {
   ];
 
   otherTechnologies: string[] = [
-    'Python',
-    'NodeJS',
-    'SQL',
-    'MongoDB',
-    'Java',
-    'Unity',
-    'Wordpress',
-    'IBM Cloud',
+    'RxJS',
+    'NGRX',
+    'MobX',
+    'Azure Functions',
+    '.NET',
+    'Azure Functions',
+    'Git',
+    'Swagger',
+    'GitHub',
+    'Leaflet',
+    'D3.js',
   ];
 
   getCoreTechnologies() {
