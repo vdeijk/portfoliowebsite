@@ -14,7 +14,7 @@ import { SmallButtonComponent } from './views/small/small-button/small-button.co
 import { MenuLinkComponent } from './views/small/menu-link/menu-link.component';
 import { ScrollButtonComponent } from './views/small/scroll-button/scroll-button.component';
 import { IconComponent } from './views/small/font-awesome-icon/font-awesome-icon.component';
-import { LineComponent } from './views/small/line/header-line.component';
+import { LineComponent } from './views/small/header-line/header-line.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HomepageComponent } from './views/large/Homepage/homepage.component';
 import { TechnologyLeftComponent } from './views/small/technology-left/technology-left.component';
@@ -24,6 +24,8 @@ import { WhitepaperInputComponent } from './views/small/text-input/text-input.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PortfolioCardComponent } from './views/small/portfolio-card/portfolio-card.component';
+import { ReferralButtonComponent } from './views/small/referral-button/referral-button.component';
+import { ReferralComponent } from './views/small/referral/referral.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { PortfolioCardComponent } from './views/small/portfolio-card/portfolio-c
     UnorderedListComponent,
     WhitepaperInputComponent,
     PortfolioCardComponent,
+    ReferralButtonComponent,
+    ReferralComponent,
   ],
   imports: [
     BrowserModule,

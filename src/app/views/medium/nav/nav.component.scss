@@ -18,4 +18,10 @@
     width: max-content;
     grid-template-columns: repeat(6, max-content);
   }
+
+  &__socials {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 2rem;
+  }
 }

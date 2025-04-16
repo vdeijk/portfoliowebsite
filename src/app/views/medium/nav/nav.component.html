@@ -3,12 +3,19 @@
   <div class="navbar__menu">
     <app-menu-link linkName="Home" linkUrl="#home"></app-menu-link>
     <app-menu-link linkName="About" linkUrl="#about"></app-menu-link>
-    <app-menu-link linkName="Referrals" linkUrl="#referrals"></app-menu-link>
+    <!--<app-menu-link linkName="Referrals" linkUrl="#referrals"></app-menu-link>-->
     <app-menu-link linkName="Technologies" linkUrl="#technologies"></app-menu-link>
     <app-menu-link linkName="Portfolio" linkUrl="#portfolio"></app-menu-link>
     <app-menu-link linkName="Whitepaper" linkUrl="#whitepaper"></app-menu-link>
   </div>
-  <a href="https://www.linkedin.com/in/rick-van-der-eijk-9829b774/" target="_blank">
-    <app-font-awesome-icon fontAwesomeType="fa-brands fa-linkedin-in" [iconColor]="iconColor"></app-font-awesome-icon>
-  </a>
+  <div class="navbar__socials">
+    <a href="https://github.com/vdeijk/" target="_blank">
+      <app-font-awesome-icon fontAwesomeType="fa-brands fa-github" [iconColor]="iconColor"
+        [shouldScaleWhenHovered]="true"></app-font-awesome-icon>
+    </a>
+    <a href="https://www.linkedin.com/in/rick-van-der-eijk-9829b774/" target="_blank">
+      <app-font-awesome-icon fontAwesomeType="fa-brands fa-linkedin-in" [iconColor]="iconColor"
+        [shouldScaleWhenHovered]="true"></app-font-awesome-icon>
+    </a>
+  </div>
 </nav>

@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { AppColor } from 'src/app/enums/app-color';
 
 @Component({
@@ -8,7 +8,9 @@ import { AppColor } from 'src/app/enums/app-color';
   encapsulation: ViewEncapsulation.None,
 })
 export class ScrollButtonComponent {
-  iconColor = AppColor.Tertiary;
+  @Input() public href = '';
+
+  public iconColor = AppColor.Tertiary;
 
   constructor() {}
 }

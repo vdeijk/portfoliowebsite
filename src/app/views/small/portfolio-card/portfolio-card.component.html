@@ -9,7 +9,7 @@
           <h5 class="portfolio__h5">Features</h5>
           <ng-container *ngFor="let cardFeature of cardFeatures">
             <div class="portfolio__feature"> <app-font-awesome-icon fontAwesomeType="fa-solid fa-check"
-                [iconColor]="iconColor"></app-font-awesome-icon>
+                [shouldScaleWhenHovered]="false" [iconColor]="iconColor"></app-font-awesome-icon>
               <p>{{cardFeature}}</p>
             </div>
           </ng-container>
@@ -17,14 +17,16 @@
       </div>
       <div class="portfolio__bottom">
         <h6 class="portfolio__h6">Flip</h6>
-        <app-font-awesome-icon fontAwesomeType="fa-solid fa-arrow-right"
+        <app-font-awesome-icon fontAwesomeType="fa-solid fa-arrow-right" [shouldScaleWhenHovered]="false"
           [iconColor]="iconColor"></app-font-awesome-icon>
       </div>
     </div>
     <div class="portfolio__back">
       <div class="portfolio__buttons">
-        <app-small-button [title]="'View project'"></app-small-button><app-small-button
-          [title]="'Get code'"></app-small-button>
+        <app-small-button [title]="'View project'" *ngIf="cardLinks.view"
+          (buttonClick)="openLink(cardLinks.view)"></app-small-button>
+        <app-small-button [title]="'Get code'" *ngIf="cardLinks.code"
+          (buttonClick)="openLink(cardLinks.code)"></app-small-button>
       </div>
     </div>
   </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { PortfolioService } from 'src/app/states/portfolio.service';
+import { CardLinks } from 'src/app/interfaces/cardLink';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,10 +10,11 @@ import { PortfolioService } from 'src/app/states/portfolio.service';
 export class PortfolioComponent {
   cardsFeatures: string[][] = [];
   cardsTitles: string[] = [];
-  cardsImageSrcs: string[] = [];
+  cardsLinks: CardLinks[] = [];
 
   constructor(private portfolioService: PortfolioService) {
     this.cardsFeatures = this.portfolioService.getCardsFeatures();
     this.cardsTitles = this.portfolioService.getCardsTitles();
+    this.cardsLinks = this.portfolioService.getCardsLinks();
   }
 }
