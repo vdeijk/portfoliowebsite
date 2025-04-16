@@ -14,7 +14,6 @@ export class TechnologiesService {
     { technologyName: 'CSS', technologySrc: 'assets/images/css.png' },
     { technologyName: 'C#', technologySrc: 'assets/images/react.png' },
     { technologyName: 'Angular', technologySrc: 'assets/images/angular.svg' },
-    { technologyName: 'Unity', technologySrc: 'assets/images/unity.png' },
   ];
 
   otherTechnologies: string[] = [
