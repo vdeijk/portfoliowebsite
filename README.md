@@ -1,5 +1,3 @@
-# Project Documentation
-
 ## Overview
 
 This project is a personal portfolio website for Rick van der Eijk, showcasing his skills, projects, and providing a way to download his CV. The website is built using Angular and follows best practices for modularization, styling, and component-based architecture.
