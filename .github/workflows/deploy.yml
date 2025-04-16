@@ -29,5 +29,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/portfolio-website
+        publish_dir: ./dist/portfoliowebsite
         destination_dir: ${{ github.ref == 'refs/heads/main' && '' || 'preview' }}
